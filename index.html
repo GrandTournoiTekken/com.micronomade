@@ -28,6 +28,33 @@
     <![endif]-->
     
     <script src="assets/js/modernizr.js"></script>
+
+
+    <!-- Bandeau cookies -->
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+	<script>
+	window.addEventListener("load", function(){
+	window.cookieconsent.initialise({
+	  "palette": {
+	    "popup": {
+	      "background": "#edeff5",
+	      "text": "#838391"
+	    },
+	    "button": {
+	      "background": "#4b81e8"
+	    }
+	  },
+	  "theme": "edgeless",
+	  "position": "bottom-right",
+	  "content": {
+	    "message": "Ce site utilise des cookies pour son widget Twitter. Vous pouvez paramétrer votre navigateur pour les refuser (le widget ne fonctionnera pas). Certains navigateurs les refusent par défaut dans certaines conditions.",
+	    "dismiss": "OK",
+	    "link": "Pourquoi je vois cela ?",
+	    "href": "https://fr.wikipedia.org/wiki/Cookie_(informatique)#Directive_2002/58_sur_la_vie_priv%C3%A9e"
+	  }
+	})});
+	</script>
   </head>
 
   <body>
